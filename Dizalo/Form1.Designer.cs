@@ -1,6 +1,6 @@
 ﻿namespace Dizalo
 {
-    partial class Form1
+    partial class FormDizalo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDizalo));
             this.label_trenutnikat = new System.Windows.Forms.Label();
             this.label_trenutnoosoba = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,22 +38,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnprizemlje = new System.Windows.Forms.Button();
+            this.btn1kat = new System.Windows.Forms.Button();
+            this.btn2kat = new System.Windows.Forms.Button();
+            this.btn3kat = new System.Windows.Forms.Button();
+            this.brosprizemlje = new System.Windows.Forms.ComboBox();
+            this.bros1kat = new System.Windows.Forms.ComboBox();
+            this.bros2kat = new System.Windows.Forms.ComboBox();
+            this.bros3kat = new System.Windows.Forms.ComboBox();
+            this.combo2kat = new System.Windows.Forms.ComboBox();
+            this.combo1kat = new System.Windows.Forms.ComboBox();
+            this.comboprizemlje = new System.Windows.Forms.ComboBox();
+            this.combo3kat = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -62,10 +58,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.textTrenutniKat = new System.Windows.Forms.TextBox();
+            this.textTrenutnoOsoba = new System.Windows.Forms.TextBox();
+            this.picprizemlje = new System.Windows.Forms.PictureBox();
+            this.pic3kat = new System.Windows.Forms.PictureBox();
+            this.pic2kat = new System.Windows.Forms.PictureBox();
+            this.pic1kat = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1kat)).BeginInit();
             this.SuspendLayout();
             // 
             // label_trenutnikat
@@ -167,60 +169,60 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Prizemlje";
             // 
-            // button1
+            // btnprizemlje
             // 
-            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(485, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2);
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Pozovi\r\n";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnprizemlje.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprizemlje.Location = new System.Drawing.Point(485, 325);
+            this.btnprizemlje.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnprizemlje.Name = "btnprizemlje";
+            this.btnprizemlje.Padding = new System.Windows.Forms.Padding(2);
+            this.btnprizemlje.Size = new System.Drawing.Size(80, 40);
+            this.btnprizemlje.TabIndex = 9;
+            this.btnprizemlje.Text = "Pozovi\r\n";
+            this.btnprizemlje.UseVisualStyleBackColor = true;
+            this.btnprizemlje.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn1kat
             // 
-            this.button2.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(485, 255);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(2);
-            this.button2.Size = new System.Drawing.Size(80, 40);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Pozovi";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn1kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1kat.Location = new System.Drawing.Point(485, 255);
+            this.btn1kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn1kat.Name = "btn1kat";
+            this.btn1kat.Padding = new System.Windows.Forms.Padding(2);
+            this.btn1kat.Size = new System.Drawing.Size(80, 40);
+            this.btn1kat.TabIndex = 10;
+            this.btn1kat.Text = "Pozovi";
+            this.btn1kat.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn2kat
             // 
-            this.button3.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(485, 189);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(2);
-            this.button3.Size = new System.Drawing.Size(80, 40);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Pozovi";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn2kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2kat.Location = new System.Drawing.Point(485, 189);
+            this.btn2kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn2kat.Name = "btn2kat";
+            this.btn2kat.Padding = new System.Windows.Forms.Padding(2);
+            this.btn2kat.Size = new System.Drawing.Size(80, 40);
+            this.btn2kat.TabIndex = 11;
+            this.btn2kat.Text = "Pozovi";
+            this.btn2kat.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn3kat
             // 
-            this.button4.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(485, 121);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(2);
-            this.button4.Size = new System.Drawing.Size(80, 40);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Pozovi";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn3kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3kat.Location = new System.Drawing.Point(485, 121);
+            this.btn3kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn3kat.Name = "btn3kat";
+            this.btn3kat.Padding = new System.Windows.Forms.Padding(2);
+            this.btn3kat.Size = new System.Drawing.Size(80, 40);
+            this.btn3kat.TabIndex = 12;
+            this.btn3kat.Text = "Pozovi";
+            this.btn3kat.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // brosprizemlje
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.brosprizemlje.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brosprizemlje.FormattingEnabled = true;
+            this.brosprizemlje.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -231,17 +233,17 @@
             "8",
             "9",
             "10"});
-            this.comboBox1.Location = new System.Drawing.Point(142, 337);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 28);
-            this.comboBox1.TabIndex = 14;
+            this.brosprizemlje.Location = new System.Drawing.Point(142, 337);
+            this.brosprizemlje.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.brosprizemlje.Name = "brosprizemlje";
+            this.brosprizemlje.Size = new System.Drawing.Size(120, 28);
+            this.brosprizemlje.TabIndex = 14;
             // 
-            // comboBox2
+            // bros1kat
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.bros1kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bros1kat.FormattingEnabled = true;
+            this.bros1kat.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -252,17 +254,17 @@
             "8",
             "9",
             "10"});
-            this.comboBox2.Location = new System.Drawing.Point(142, 267);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(120, 28);
-            this.comboBox2.TabIndex = 15;
+            this.bros1kat.Location = new System.Drawing.Point(142, 267);
+            this.bros1kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bros1kat.Name = "bros1kat";
+            this.bros1kat.Size = new System.Drawing.Size(120, 28);
+            this.bros1kat.TabIndex = 15;
             // 
-            // comboBox3
+            // bros2kat
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.bros2kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bros2kat.FormattingEnabled = true;
+            this.bros2kat.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -273,17 +275,17 @@
             "8",
             "9",
             "10"});
-            this.comboBox3.Location = new System.Drawing.Point(142, 201);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(120, 28);
-            this.comboBox3.TabIndex = 16;
+            this.bros2kat.Location = new System.Drawing.Point(142, 201);
+            this.bros2kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bros2kat.Name = "bros2kat";
+            this.bros2kat.Size = new System.Drawing.Size(120, 28);
+            this.bros2kat.TabIndex = 16;
             // 
-            // comboBox4
+            // bros3kat
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.bros3kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bros3kat.FormattingEnabled = true;
+            this.bros3kat.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -294,103 +296,67 @@
             "8",
             "9",
             "10"});
-            this.comboBox4.Location = new System.Drawing.Point(142, 133);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(120, 28);
-            this.comboBox4.TabIndex = 17;
+            this.bros3kat.Location = new System.Drawing.Point(142, 133);
+            this.bros3kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.bros3kat.Name = "bros3kat";
+            this.bros3kat.Size = new System.Drawing.Size(120, 28);
+            this.bros3kat.TabIndex = 17;
             // 
-            // pictureBox2
+            // combo2kat
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(654, 237);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 58);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(654, 171);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 58);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(654, 103);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 58);
-            this.pictureBox4.TabIndex = 21;
-            this.pictureBox4.TabStop = false;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.combo2kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo2kat.FormattingEnabled = true;
+            this.combo2kat.Items.AddRange(new object[] {
             "Prizemlje",
             "1 kat",
             "3 kat"});
-            this.comboBox5.Location = new System.Drawing.Point(310, 201);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(120, 28);
-            this.comboBox5.TabIndex = 29;
+            this.combo2kat.Location = new System.Drawing.Point(310, 201);
+            this.combo2kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.combo2kat.Name = "combo2kat";
+            this.combo2kat.Size = new System.Drawing.Size(120, 28);
+            this.combo2kat.TabIndex = 29;
             // 
-            // comboBox6
+            // combo1kat
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.combo1kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo1kat.FormattingEnabled = true;
+            this.combo1kat.Items.AddRange(new object[] {
             "Prizemlje",
             "2 kat",
             "3 kat"});
-            this.comboBox6.Location = new System.Drawing.Point(310, 267);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(120, 28);
-            this.comboBox6.TabIndex = 28;
+            this.combo1kat.Location = new System.Drawing.Point(310, 267);
+            this.combo1kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.combo1kat.Name = "combo1kat";
+            this.combo1kat.Size = new System.Drawing.Size(120, 28);
+            this.combo1kat.TabIndex = 28;
             // 
-            // comboBox7
+            // comboprizemlje
             // 
-            this.comboBox7.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.comboprizemlje.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboprizemlje.FormattingEnabled = true;
+            this.comboprizemlje.Items.AddRange(new object[] {
             "1 kat",
             "2 kat",
             "3 kat"});
-            this.comboBox7.Location = new System.Drawing.Point(310, 337);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(120, 28);
-            this.comboBox7.TabIndex = 27;
+            this.comboprizemlje.Location = new System.Drawing.Point(310, 337);
+            this.comboprizemlje.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.comboprizemlje.Name = "comboprizemlje";
+            this.comboprizemlje.Size = new System.Drawing.Size(120, 28);
+            this.comboprizemlje.TabIndex = 27;
             // 
-            // comboBox8
+            // combo3kat
             // 
-            this.comboBox8.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.combo3kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo3kat.FormattingEnabled = true;
+            this.combo3kat.Items.AddRange(new object[] {
             "Prizemlje",
             "1 kat",
             "2 kat"});
-            this.comboBox8.Location = new System.Drawing.Point(310, 133);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(120, 28);
-            this.comboBox8.TabIndex = 26;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(654, 307);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 58);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
+            this.combo3kat.Location = new System.Drawing.Point(310, 133);
+            this.combo3kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.combo3kat.Name = "combo3kat";
+            this.combo3kat.Size = new System.Drawing.Size(120, 28);
+            this.combo3kat.TabIndex = 26;
             // 
             // label8
             // 
@@ -480,12 +446,74 @@
             this.label15.TabIndex = 38;
             this.label15.Text = "Prema slici se vidi\r\nna kojem se katu\r\ntrenutno nalazi dizalo.";
             // 
-            // Form1
+            // textTrenutniKat
+            // 
+            this.textTrenutniKat.Location = new System.Drawing.Point(175, 421);
+            this.textTrenutniKat.Name = "textTrenutniKat";
+            this.textTrenutniKat.ReadOnly = true;
+            this.textTrenutniKat.Size = new System.Drawing.Size(123, 22);
+            this.textTrenutniKat.TabIndex = 39;
+            // 
+            // textTrenutnoOsoba
+            // 
+            this.textTrenutnoOsoba.Location = new System.Drawing.Point(310, 471);
+            this.textTrenutnoOsoba.Name = "textTrenutnoOsoba";
+            this.textTrenutnoOsoba.ReadOnly = true;
+            this.textTrenutnoOsoba.Size = new System.Drawing.Size(123, 22);
+            this.textTrenutnoOsoba.TabIndex = 40;
+            // 
+            // picprizemlje
+            // 
+            this.picprizemlje.ErrorImage = null;
+            this.picprizemlje.InitialImage = null;
+            this.picprizemlje.Location = new System.Drawing.Point(654, 307);
+            this.picprizemlje.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.picprizemlje.Name = "picprizemlje";
+            this.picprizemlje.Size = new System.Drawing.Size(100, 58);
+            this.picprizemlje.TabIndex = 30;
+            this.picprizemlje.TabStop = false;
+            // 
+            // pic3kat
+            // 
+            this.pic3kat.ErrorImage = null;
+            this.pic3kat.InitialImage = null;
+            this.pic3kat.Location = new System.Drawing.Point(654, 103);
+            this.pic3kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pic3kat.Name = "pic3kat";
+            this.pic3kat.Size = new System.Drawing.Size(100, 58);
+            this.pic3kat.TabIndex = 21;
+            this.pic3kat.TabStop = false;
+            // 
+            // pic2kat
+            // 
+            this.pic2kat.ErrorImage = null;
+            this.pic2kat.InitialImage = null;
+            this.pic2kat.Location = new System.Drawing.Point(654, 171);
+            this.pic2kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pic2kat.Name = "pic2kat";
+            this.pic2kat.Size = new System.Drawing.Size(100, 58);
+            this.pic2kat.TabIndex = 20;
+            this.pic2kat.TabStop = false;
+            // 
+            // pic1kat
+            // 
+            this.pic1kat.ErrorImage = null;
+            this.pic1kat.InitialImage = null;
+            this.pic1kat.Location = new System.Drawing.Point(654, 237);
+            this.pic1kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pic1kat.Name = "pic1kat";
+            this.pic1kat.Size = new System.Drawing.Size(100, 58);
+            this.pic1kat.TabIndex = 19;
+            this.pic1kat.TabStop = false;
+            // 
+            // FormDizalo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(798, 642);
+            this.Controls.Add(this.textTrenutnoOsoba);
+            this.Controls.Add(this.textTrenutniKat);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -494,22 +522,22 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.picprizemlje);
+            this.Controls.Add(this.combo2kat);
+            this.Controls.Add(this.combo1kat);
+            this.Controls.Add(this.comboprizemlje);
+            this.Controls.Add(this.combo3kat);
+            this.Controls.Add(this.pic3kat);
+            this.Controls.Add(this.pic2kat);
+            this.Controls.Add(this.pic1kat);
+            this.Controls.Add(this.bros3kat);
+            this.Controls.Add(this.bros2kat);
+            this.Controls.Add(this.bros1kat);
+            this.Controls.Add(this.brosprizemlje);
+            this.Controls.Add(this.btn3kat);
+            this.Controls.Add(this.btn2kat);
+            this.Controls.Add(this.btn1kat);
+            this.Controls.Add(this.btnprizemlje);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -522,12 +550,12 @@
             this.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "Form1";
+            this.Name = "FormDizalo";
             this.Text = "Dizalo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1kat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -544,22 +572,22 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnprizemlje;
+        private System.Windows.Forms.Button btn1kat;
+        private System.Windows.Forms.Button btn2kat;
+        private System.Windows.Forms.Button btn3kat;
+        private System.Windows.Forms.ComboBox brosprizemlje;
+        private System.Windows.Forms.ComboBox bros1kat;
+        private System.Windows.Forms.ComboBox bros2kat;
+        private System.Windows.Forms.ComboBox bros3kat;
+        private System.Windows.Forms.PictureBox pic1kat;
+        private System.Windows.Forms.PictureBox pic2kat;
+        private System.Windows.Forms.PictureBox pic3kat;
+        private System.Windows.Forms.ComboBox combo2kat;
+        private System.Windows.Forms.ComboBox combo1kat;
+        private System.Windows.Forms.ComboBox comboprizemlje;
+        private System.Windows.Forms.ComboBox combo3kat;
+        private System.Windows.Forms.PictureBox picprizemlje;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
@@ -568,6 +596,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textTrenutniKat;
+        private System.Windows.Forms.TextBox textTrenutnoOsoba;
     }
 }
 
