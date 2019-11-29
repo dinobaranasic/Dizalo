@@ -64,6 +64,11 @@
             this.pic3kat = new System.Windows.Forms.PictureBox();
             this.pic2kat = new System.Windows.Forms.PictureBox();
             this.pic1kat = new System.Windows.Forms.PictureBox();
+            this.butPokreni = new System.Windows.Forms.Button();
+            this.checkSpori = new System.Windows.Forms.CheckBox();
+            this.checkSrednji = new System.Windows.Forms.CheckBox();
+            this.checkBrzi = new System.Windows.Forms.CheckBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).BeginInit();
@@ -74,7 +79,7 @@
             // 
             this.label_trenutnikat.AutoSize = true;
             this.label_trenutnikat.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trenutnikat.Location = new System.Drawing.Point(11, 421);
+            this.label_trenutnikat.Location = new System.Drawing.Point(11, 407);
             this.label_trenutnikat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_trenutnikat.Name = "label_trenutnikat";
             this.label_trenutnikat.Size = new System.Drawing.Size(156, 31);
@@ -85,7 +90,7 @@
             // 
             this.label_trenutnoosoba.AutoSize = true;
             this.label_trenutnoosoba.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_trenutnoosoba.Location = new System.Drawing.Point(11, 471);
+            this.label_trenutnoosoba.Location = new System.Drawing.Point(11, 462);
             this.label_trenutnoosoba.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_trenutnoosoba.Name = "label_trenutnoosoba";
             this.label_trenutnoosoba.Size = new System.Drawing.Size(287, 31);
@@ -96,12 +101,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 573);
+            this.label3.Location = new System.Drawing.Point(13, 573);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(322, 20);
+            this.label3.Size = new System.Drawing.Size(336, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "U dizalo može biti maksimalno 10 osoba.";
+            this.label3.Text = "- U dizalo može biti maksimalno 10 osoba.";
             // 
             // label4
             // 
@@ -110,9 +115,9 @@
             this.label4.Location = new System.Drawing.Point(11, 593);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(316, 40);
+            this.label4.Size = new System.Drawing.Size(505, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Prema redosljedu pozivanja dizala ,dizalo\r\n obavlja svoju funkciju.";
+            this.label4.Text = "- Prema redosljedu pozivanja dizala ,dizalo obavlja svoju funkciju.";
             // 
             // label1
             // 
@@ -448,7 +453,7 @@
             // 
             // textTrenutniKat
             // 
-            this.textTrenutniKat.Location = new System.Drawing.Point(175, 421);
+            this.textTrenutniKat.Location = new System.Drawing.Point(175, 407);
             this.textTrenutniKat.Name = "textTrenutniKat";
             this.textTrenutniKat.ReadOnly = true;
             this.textTrenutniKat.Size = new System.Drawing.Size(123, 22);
@@ -456,7 +461,7 @@
             // 
             // textTrenutnoOsoba
             // 
-            this.textTrenutnoOsoba.Location = new System.Drawing.Point(310, 471);
+            this.textTrenutnoOsoba.Location = new System.Drawing.Point(307, 462);
             this.textTrenutnoOsoba.Name = "textTrenutnoOsoba";
             this.textTrenutnoOsoba.ReadOnly = true;
             this.textTrenutnoOsoba.Size = new System.Drawing.Size(123, 22);
@@ -506,12 +511,79 @@
             this.pic1kat.TabIndex = 19;
             this.pic1kat.TabStop = false;
             // 
+            // butPokreni
+            // 
+            this.butPokreni.BackColor = System.Drawing.Color.RoyalBlue;
+            this.butPokreni.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butPokreni.ForeColor = System.Drawing.SystemColors.Control;
+            this.butPokreni.Location = new System.Drawing.Point(654, 423);
+            this.butPokreni.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.butPokreni.Name = "butPokreni";
+            this.butPokreni.Padding = new System.Windows.Forms.Padding(2);
+            this.butPokreni.Size = new System.Drawing.Size(100, 61);
+            this.butPokreni.TabIndex = 42;
+            this.butPokreni.Text = "Pokreni";
+            this.butPokreni.UseVisualStyleBackColor = false;
+            this.butPokreni.Click += new System.EventHandler(this.butPokreni_Click);
+            // 
+            // checkSpori
+            // 
+            this.checkSpori.AutoSize = true;
+            this.checkSpori.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSpori.Location = new System.Drawing.Point(485, 400);
+            this.checkSpori.Name = "checkSpori";
+            this.checkSpori.Size = new System.Drawing.Size(113, 24);
+            this.checkSpori.TabIndex = 43;
+            this.checkSpori.Text = "Spori način";
+            this.checkSpori.UseVisualStyleBackColor = true;
+            this.checkSpori.CheckedChanged += new System.EventHandler(this.checkSpori_CheckedChanged);
+            // 
+            // checkSrednji
+            // 
+            this.checkSrednji.AutoSize = true;
+            this.checkSrednji.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkSrednji.Location = new System.Drawing.Point(485, 430);
+            this.checkSrednji.Name = "checkSrednji";
+            this.checkSrednji.Size = new System.Drawing.Size(126, 24);
+            this.checkSrednji.TabIndex = 44;
+            this.checkSrednji.Text = "Srednji način";
+            this.checkSrednji.UseVisualStyleBackColor = true;
+            this.checkSrednji.CheckedChanged += new System.EventHandler(this.checkSrednji_CheckedChanged);
+            // 
+            // checkBrzi
+            // 
+            this.checkBrzi.AutoSize = true;
+            this.checkBrzi.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBrzi.Location = new System.Drawing.Point(485, 460);
+            this.checkBrzi.Name = "checkBrzi";
+            this.checkBrzi.Size = new System.Drawing.Size(104, 24);
+            this.checkBrzi.TabIndex = 45;
+            this.checkBrzi.Text = "Brzi način";
+            this.checkBrzi.UseVisualStyleBackColor = true;
+            this.checkBrzi.CheckedChanged += new System.EventHandler(this.checkBrzi_CheckedChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(13, 613);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(404, 20);
+            this.label16.TabIndex = 46;
+            this.label16.Text = "- Ako nije definirano dizalo radi u Srednjem načinu.";
+            // 
             // FormDizalo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(798, 642);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.checkBrzi);
+            this.Controls.Add(this.checkSrednji);
+            this.Controls.Add(this.checkSpori);
+            this.Controls.Add(this.butPokreni);
             this.Controls.Add(this.textTrenutnoOsoba);
             this.Controls.Add(this.textTrenutniKat);
             this.Controls.Add(this.label15);
@@ -598,6 +670,11 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textTrenutniKat;
         private System.Windows.Forms.TextBox textTrenutnoOsoba;
+        private System.Windows.Forms.Button butPokreni;
+        private System.Windows.Forms.CheckBox checkSpori;
+        private System.Windows.Forms.CheckBox checkSrednji;
+        private System.Windows.Forms.CheckBox checkBrzi;
+        private System.Windows.Forms.Label label16;
     }
 }
 
