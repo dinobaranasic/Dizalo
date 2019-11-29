@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dizalo
 {
-    class Osoba
+    class Osoba : SvojstvoDizalo
     {
         //Klasa Osoba se koristi za podatke o osobama koje koriste dizalo
         //Broj osoba,na koji kat osobe žele otići sa dizalom
-
+        public const int maxosoba = 10;
+        public int brosoba;
+        public int brkatova;
+        
     }
 }

@@ -13,6 +13,7 @@ namespace Dizalo
 {
     public partial class FormDizalo : Form
     {
+
         public FormDizalo()
         {
             InitializeComponent();
@@ -71,8 +72,13 @@ namespace Dizalo
         //BTN za prizemlje
         private void button1_Click(object sender, EventArgs e)
         {
+            Osoba osoba1 = new Osoba();
+            osoba1.brkatova = 0;
+            osoba1.ToString();
+            string max = Osoba.maxosoba.ToString();
+
             //Dizalo se u početku nalazi na prizemlju
-            textTrenutniKat.Text = "Prizemlje";
+            textTrenutniKat.Text = max;
             picprizemlje.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\dizalo.jpg");
             picprizemlje.SizeMode = PictureBoxSizeMode.StretchImage;
 
