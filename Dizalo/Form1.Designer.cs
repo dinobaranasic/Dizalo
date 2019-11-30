@@ -69,6 +69,8 @@
             this.checkSrednji = new System.Windows.Forms.CheckBox();
             this.checkBrzi = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textSlobodnomjesta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).BeginInit();
@@ -183,7 +185,7 @@
             this.btnprizemlje.Padding = new System.Windows.Forms.Padding(2);
             this.btnprizemlje.Size = new System.Drawing.Size(80, 40);
             this.btnprizemlje.TabIndex = 9;
-            this.btnprizemlje.Text = "Pozovi\r\n";
+            this.btnprizemlje.Text = "Kreni";
             this.btnprizemlje.UseVisualStyleBackColor = true;
             this.btnprizemlje.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -196,8 +198,9 @@
             this.btn1kat.Padding = new System.Windows.Forms.Padding(2);
             this.btn1kat.Size = new System.Drawing.Size(80, 40);
             this.btn1kat.TabIndex = 10;
-            this.btn1kat.Text = "Pozovi";
+            this.btn1kat.Text = "Kreni";
             this.btn1kat.UseVisualStyleBackColor = true;
+            this.btn1kat.Click += new System.EventHandler(this.btn1kat_Click);
             // 
             // btn2kat
             // 
@@ -208,8 +211,9 @@
             this.btn2kat.Padding = new System.Windows.Forms.Padding(2);
             this.btn2kat.Size = new System.Drawing.Size(80, 40);
             this.btn2kat.TabIndex = 11;
-            this.btn2kat.Text = "Pozovi";
+            this.btn2kat.Text = "Kreni";
             this.btn2kat.UseVisualStyleBackColor = true;
+            this.btn2kat.Click += new System.EventHandler(this.btn2kat_Click);
             // 
             // btn3kat
             // 
@@ -220,8 +224,9 @@
             this.btn3kat.Padding = new System.Windows.Forms.Padding(2);
             this.btn3kat.Size = new System.Drawing.Size(80, 40);
             this.btn3kat.TabIndex = 12;
-            this.btn3kat.Text = "Pozovi";
+            this.btn3kat.Text = "Kreni";
             this.btn3kat.UseVisualStyleBackColor = true;
+            this.btn3kat.Click += new System.EventHandler(this.btn3kat_Click);
             // 
             // brosprizemlje
             // 
@@ -414,9 +419,9 @@
             this.label12.Location = new System.Drawing.Point(437, 44);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 15);
+            this.label12.Size = new System.Drawing.Size(176, 30);
             this.label12.TabIndex = 35;
-            this.label12.Text = "Poziva se dizalo.";
+            this.label12.Text = "Poziva se dizalo.\r\nKreće na kat koji je definiran.";
             // 
             // label13
             // 
@@ -453,7 +458,7 @@
             // 
             // textTrenutniKat
             // 
-            this.textTrenutniKat.Location = new System.Drawing.Point(175, 407);
+            this.textTrenutniKat.Location = new System.Drawing.Point(172, 407);
             this.textTrenutniKat.Name = "textTrenutniKat";
             this.textTrenutniKat.ReadOnly = true;
             this.textTrenutniKat.Size = new System.Drawing.Size(123, 22);
@@ -461,7 +466,7 @@
             // 
             // textTrenutnoOsoba
             // 
-            this.textTrenutnoOsoba.Location = new System.Drawing.Point(307, 462);
+            this.textTrenutnoOsoba.Location = new System.Drawing.Point(312, 462);
             this.textTrenutnoOsoba.Name = "textTrenutnoOsoba";
             this.textTrenutnoOsoba.ReadOnly = true;
             this.textTrenutnoOsoba.Size = new System.Drawing.Size(123, 22);
@@ -573,12 +578,33 @@
             this.label16.TabIndex = 46;
             this.label16.Text = "- Ako nije definirano dizalo radi u Srednjem načinu.";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tempus Sans ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(11, 519);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(296, 31);
+            this.label17.TabIndex = 47;
+            this.label17.Text = "Slobodno mjesta u dizalu:";
+            // 
+            // textSlobodnomjesta
+            // 
+            this.textSlobodnomjesta.Location = new System.Drawing.Point(312, 519);
+            this.textSlobodnomjesta.Name = "textSlobodnomjesta";
+            this.textSlobodnomjesta.ReadOnly = true;
+            this.textSlobodnomjesta.Size = new System.Drawing.Size(123, 22);
+            this.textSlobodnomjesta.TabIndex = 48;
+            // 
             // FormDizalo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(798, 642);
+            this.Controls.Add(this.textSlobodnomjesta);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.checkBrzi);
             this.Controls.Add(this.checkSrednji);
@@ -675,6 +701,8 @@
         private System.Windows.Forms.CheckBox checkSrednji;
         private System.Windows.Forms.CheckBox checkBrzi;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textSlobodnomjesta;
     }
 }
 
