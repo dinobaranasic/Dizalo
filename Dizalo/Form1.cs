@@ -220,7 +220,7 @@ namespace Dizalo
             //Broj osoba je 0
             textTrenutniKat.Text = "Prizemlje";
             textTrenutnoOsoba.Text = "0";
-            textSlobodnomjesta.Text = "0";
+            textSlobodnomjesta.Text = "10";
             prizemlje();
         }
 
