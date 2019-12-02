@@ -230,9 +230,11 @@
             // 
             // brosprizemlje
             // 
+            this.brosprizemlje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.brosprizemlje.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brosprizemlje.FormattingEnabled = true;
             this.brosprizemlje.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -251,9 +253,11 @@
             // 
             // bros1kat
             // 
+            this.bros1kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bros1kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bros1kat.FormattingEnabled = true;
             this.bros1kat.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -272,9 +276,11 @@
             // 
             // bros2kat
             // 
+            this.bros2kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bros2kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bros2kat.FormattingEnabled = true;
             this.bros2kat.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -293,9 +299,11 @@
             // 
             // bros3kat
             // 
+            this.bros3kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bros3kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bros3kat.FormattingEnabled = true;
             this.bros3kat.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -314,11 +322,13 @@
             // 
             // combo2kat
             // 
+            this.combo2kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo2kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo2kat.FormattingEnabled = true;
             this.combo2kat.Items.AddRange(new object[] {
             "Prizemlje",
             "1 kat",
+            "2 kat",
             "3 kat"});
             this.combo2kat.Location = new System.Drawing.Point(310, 201);
             this.combo2kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -328,10 +338,12 @@
             // 
             // combo1kat
             // 
+            this.combo1kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo1kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo1kat.FormattingEnabled = true;
             this.combo1kat.Items.AddRange(new object[] {
             "Prizemlje",
+            "1 kat",
             "2 kat",
             "3 kat"});
             this.combo1kat.Location = new System.Drawing.Point(310, 267);
@@ -342,9 +354,11 @@
             // 
             // comboprizemlje
             // 
+            this.comboprizemlje.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboprizemlje.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboprizemlje.FormattingEnabled = true;
             this.comboprizemlje.Items.AddRange(new object[] {
+            "Prizemlje",
             "1 kat",
             "2 kat",
             "3 kat"});
@@ -356,12 +370,14 @@
             // 
             // combo3kat
             // 
+            this.combo3kat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo3kat.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo3kat.FormattingEnabled = true;
             this.combo3kat.Items.AddRange(new object[] {
             "Prizemlje",
             "1 kat",
-            "2 kat"});
+            "2 kat",
+            "3 kat"});
             this.combo3kat.Location = new System.Drawing.Point(310, 133);
             this.combo3kat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.combo3kat.Name = "combo3kat";
@@ -650,6 +666,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "FormDizalo";
             this.Text = "Dizalo";
+            this.Load += new System.EventHandler(this.FormDizalo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).EndInit();

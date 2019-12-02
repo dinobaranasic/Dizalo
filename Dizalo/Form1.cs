@@ -65,11 +65,39 @@ namespace Dizalo
             pic3kat.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        //Greška o broju kata
+        public void greška_kat() {
+            string message = "Ne možete putovati na isti kat! \nOdaberite kat na koji želite ići.";
+            string title = "Greška";
+            MessageBox.Show(message, title);
+        }
+
+        //Greška o broju osoba
+        public void greška_osobe()
+        {
+            string message = "Ne može 0 osoba putovati! \nOdaberite koji broj osoba putuje.";
+            string title = "Greška";
+            MessageBox.Show(message, title);
+        }
+
+        //Greška o broju osoba
+        public void greška_brosobe()
+        {
+            textTrenutnoOsoba.Text = "0";
+            textSlobodnomjesta.Text = "0";
+        }
+
         //Kreni prizemlje
         public void kreniprizemlje() {
             //Combobox - BR osoba
             string brosoba = this.brosprizemlje.SelectedItem.ToString();
             int br = Int32.Parse(brosoba);
+            if (br == 0)
+            {
+                greška_osobe();
+                greška_brosobe();
+                return;
+            }
             int max = Osoba.maxosoba;
             int osoba = max - br;
             textTrenutnoOsoba.Text = br.ToString();
@@ -86,9 +114,15 @@ namespace Dizalo
             {
                 kat2();
             }
-            else
+            else if (brkat == "3 kat")
             {
                 kat3();
+            }
+            else {
+                greška_kat();
+                greška_brosobe();
+                textTrenutniKat.Text = "";
+                return;
             }
         }
 
@@ -97,6 +131,12 @@ namespace Dizalo
             //Combobox - BR osoba
             string brosoba = this.bros1kat.SelectedItem.ToString();
             int br = Int32.Parse(brosoba);
+            if (br == 0)
+            {
+                greška_osobe();
+                greška_brosobe();
+                return;
+            }
             int max = Osoba.maxosoba;
             int osoba = max - br;
             textTrenutnoOsoba.Text = br.ToString();
@@ -113,9 +153,15 @@ namespace Dizalo
             {
                 kat3();
             }
-            else
+            else if (brkat == "Prizemlje")
             {
                 prizemlje();
+            }
+            else {
+                greška_kat();
+                greška_brosobe();
+                textTrenutniKat.Text = "";
+                return;
             }
         }
 
@@ -125,6 +171,12 @@ namespace Dizalo
             //Combobox - BR osoba
             string brosoba = this.bros2kat.SelectedItem.ToString();
             int br = Int32.Parse(brosoba);
+            if (br == 0)
+            {
+                greška_osobe();
+                greška_brosobe();
+                return;
+            }
             int max = Osoba.maxosoba;
             int osoba = max - br;
             textTrenutnoOsoba.Text = br.ToString();
@@ -141,9 +193,15 @@ namespace Dizalo
             {
                 kat3();
             }
-            else
+            else if (brkat == "Prizemlje")
             {
                 prizemlje();
+            }
+            else {
+                greška_kat();
+                greška_brosobe();
+                textTrenutniKat.Text = "";
+                return;
             }
         }
 
@@ -153,6 +211,12 @@ namespace Dizalo
             //Combobox - BR osoba
             string brosoba = this.bros3kat.SelectedItem.ToString();
             int br = Int32.Parse(brosoba);
+            if (br == 0)
+            {
+                greška_osobe();
+                greška_brosobe();
+                return;
+            }
             int max = Osoba.maxosoba;
             int osoba = max - br;
             textTrenutnoOsoba.Text = br.ToString();
@@ -169,9 +233,15 @@ namespace Dizalo
             {
                 kat2();
             }
-            else
+            else if (brkat == "Prizemlje")
             {
                 prizemlje();
+            }
+            else {
+                greška_kat();
+                greška_brosobe();
+                textTrenutniKat.Text = "";
+                return;
             }
         }
 
@@ -323,6 +393,18 @@ namespace Dizalo
                 Thread.Sleep(1500);
                 kreni3kat();
             }
+        }
+
+        private void FormDizalo_Load(object sender, EventArgs e)
+        {
+            brosprizemlje.SelectedIndex = 0;
+            bros1kat.SelectedIndex = 0;
+            bros2kat.SelectedIndex = 0;
+            bros3kat.SelectedIndex = 0;
+            comboprizemlje.SelectedIndex = 0;
+            combo1kat.SelectedIndex = 1;
+            combo2kat.SelectedIndex = 2;
+            combo3kat.SelectedIndex = 3;
         }
     }
 }
