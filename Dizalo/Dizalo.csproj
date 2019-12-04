@@ -82,8 +82,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Slike\dizalo.jpg" />
-    <Content Include="Slike\NemaDizala.jpg" />
+    <Resource Include="Slike\dizalo.jpg" />
+    <Resource Include="Slike\NemaDizala.jpg" />
     <None Include="Resources\Dizalo.jpg" />
     <None Include="Resources\dizalo.ico" />
     <None Include="Resources\Dizalo1.bmp" />

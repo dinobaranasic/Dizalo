@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,55 +15,60 @@ namespace Dizalo
 {
     public partial class FormDizalo : Form
     {
+
         //Dizalo se nalazi na prizemlju
         public void prizemlje()
         {
-            picprizemlje.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\dizalo.jpg");
+            string wanted_path = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            picprizemlje.Image = new Bitmap(wanted_path.ToString()+@"\Slike\dizalo.jpg");
             picprizemlje.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic1kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic1kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic1kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic2kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic2kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic2kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic3kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic3kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic3kat.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         //Dizalo se nalazi na 1 katu
         public void kat1()
         {
-            picprizemlje.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            string wanted_path = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            picprizemlje.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             picprizemlje.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic1kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\dizalo.jpg");
+            pic1kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\dizalo.jpg");
             pic1kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic2kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic2kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic2kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic3kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic3kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic3kat.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         //Dizalo se nalazi na 2 katu
         public void kat2()
         {
-            picprizemlje.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            string wanted_path = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            picprizemlje.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             picprizemlje.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic1kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic1kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic1kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic2kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\dizalo.jpg");
+            pic2kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\dizalo.jpg");
             pic2kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic3kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic3kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic3kat.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         //Dizalo se nalazi na 3 katu
         public void kat3()
         {
-            picprizemlje.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            string wanted_path = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            picprizemlje.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             picprizemlje.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic1kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic1kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic1kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic2kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\NemaDizala.jpg");
+            pic2kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\NemaDizala.jpg");
             pic2kat.SizeMode = PictureBoxSizeMode.StretchImage;
-            pic3kat.Image = new Bitmap(@"C:\Users\Dino\source\repos\Dizalo\Dizalo\Slike\dizalo.jpg");
+            pic3kat.Image = new Bitmap(wanted_path.ToString() + @"\Slike\dizalo.jpg");
             pic3kat.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
