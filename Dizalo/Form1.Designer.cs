@@ -618,7 +618,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(798, 642);
+            this.ClientSize = new System.Drawing.Size(784, 641);
             this.Controls.Add(this.textSlobodnomjesta);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -664,7 +664,12 @@
             this.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(800, 680);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 680);
             this.Name = "FormDizalo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dizalo";
             this.Load += new System.EventHandler(this.FormDizalo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).EndInit();
