@@ -187,7 +187,6 @@
             this.btnprizemlje.TabIndex = 9;
             this.btnprizemlje.Text = "Kreni";
             this.btnprizemlje.UseVisualStyleBackColor = true;
-            this.btnprizemlje.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn1kat
             // 
@@ -200,7 +199,6 @@
             this.btn1kat.TabIndex = 10;
             this.btn1kat.Text = "Kreni";
             this.btn1kat.UseVisualStyleBackColor = true;
-            this.btn1kat.Click += new System.EventHandler(this.btn1kat_Click);
             // 
             // btn2kat
             // 
@@ -213,7 +211,6 @@
             this.btn2kat.TabIndex = 11;
             this.btn2kat.Text = "Kreni";
             this.btn2kat.UseVisualStyleBackColor = true;
-            this.btn2kat.Click += new System.EventHandler(this.btn2kat_Click);
             // 
             // btn3kat
             // 
@@ -226,7 +223,6 @@
             this.btn3kat.TabIndex = 12;
             this.btn3kat.Text = "Kreni";
             this.btn3kat.UseVisualStyleBackColor = true;
-            this.btn3kat.Click += new System.EventHandler(this.btn3kat_Click);
             // 
             // brosprizemlje
             // 
@@ -545,7 +541,6 @@
             this.butPokreni.TabIndex = 42;
             this.butPokreni.Text = "Pokreni";
             this.butPokreni.UseVisualStyleBackColor = false;
-            this.butPokreni.Click += new System.EventHandler(this.butPokreni_Click);
             // 
             // checkSpori
             // 
@@ -557,7 +552,6 @@
             this.checkSpori.TabIndex = 43;
             this.checkSpori.Text = "Spori način";
             this.checkSpori.UseVisualStyleBackColor = true;
-            this.checkSpori.CheckedChanged += new System.EventHandler(this.checkSpori_CheckedChanged);
             // 
             // checkSrednji
             // 
@@ -569,7 +563,6 @@
             this.checkSrednji.TabIndex = 44;
             this.checkSrednji.Text = "Srednji način";
             this.checkSrednji.UseVisualStyleBackColor = true;
-            this.checkSrednji.CheckedChanged += new System.EventHandler(this.checkSrednji_CheckedChanged);
             // 
             // checkBrzi
             // 
@@ -581,7 +574,6 @@
             this.checkBrzi.TabIndex = 45;
             this.checkBrzi.Text = "Brzi način";
             this.checkBrzi.UseVisualStyleBackColor = true;
-            this.checkBrzi.CheckedChanged += new System.EventHandler(this.checkBrzi_CheckedChanged);
             // 
             // label16
             // 
@@ -671,8 +663,7 @@
             this.Name = "FormDizalo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dizalo";
-            this.Load += new System.EventHandler(this.FormDizalo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).EndInit();
+             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic1kat)).EndInit();
