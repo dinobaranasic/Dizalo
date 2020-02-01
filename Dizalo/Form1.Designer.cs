@@ -71,6 +71,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.textSlobodnomjesta = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picprizemlje)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic3kat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2kat)).BeginInit();
@@ -613,12 +614,24 @@
             this.textSlobodnomjesta.Size = new System.Drawing.Size(123, 22);
             this.textSlobodnomjesta.TabIndex = 48;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tempus Sans ITC", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(690, 487);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 17);
+            this.label18.TabIndex = 49;
+            this.label18.Text = "Bez OOP";
+            // 
             // FormDizalo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(784, 641);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.textSlobodnomjesta);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -725,6 +738,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textSlobodnomjesta;
+        private System.Windows.Forms.Label label18;
     }
 }
 
