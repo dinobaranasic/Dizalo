@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dizalo_Svojstva\Dizalo_svojstva.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,13 +83,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Slike\dizalo.jpg" />
-    <Resource Include="Slike\NemaDizala.jpg" />
+    <Resource Include="Dizalo_Svojstva\dizalo.jpg" />
+    <Resource Include="Dizalo_Svojstva\NemaDizala.jpg" />
     <None Include="Resources\Dizalo.jpg" />
     <None Include="Resources\dizalo.ico" />
     <None Include="Resources\Dizalo1.bmp" />
-    <Content Include="Slike\dizalo.ico" />
-    <Content Include="Slike\icona.ico" />
+    <Content Include="Dizalo_Svojstva\dizalo.ico" />
+    <Content Include="Dizalo_Svojstva\icona.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
